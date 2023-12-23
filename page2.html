@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 2</title>
+  <style type="text/css">
+    .body{
+      background: linear-gradient(89deg, rgba(232,235,150,1) 0%, rgba(246,129,225,1) 100%);
+    }
+    .main{
+      width: 400px;
+      height: 200px;
+      color: black;
+      margin-top: 150px;
+      background-color: #ff6e6ceb;
+      float: left;
+    }
+    .images{
+      width: 50%;
+      float: left;
+      margin-top: 50px;
+    }
+
+    .upper-text{
+      padding-top: 10px;
+      padding-left: 20px;
+      font-size: 15px;
+      font-family: calibri;
+    }
+
+    .middle-text{
+      padding-left: 20px;
+      font-size: 35px;
+      text-align: left;
+      font-family: helvetica;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+    .lower-text{
+      font-size: 15px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 10px;
+      font-family: calibri;
+    }
+    .table{
+      float: right;
+      margin-right: 30px;
+    }
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+    display:flex;
+    flex-direction:row;
+  }
+  .images {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+  .table {
+    float: none; 
+    margin: 0 auto;
+    width: 100%;
+  }
+  .upper-text, .middle-text, .lower-text {
+    padding-left: 10px;
+  }
+  .middle-text {
+    font-size: 25px;
+  }
+}
+
+  </style>
+</head>
+<body class="body">
+  <div>
+    <div class="images">
+      <table class="table" cellspacing="10">
+        <tr>
+          <td><img src="stag.jpg" alt="image" width="220px" height="200px"></td>
+          <td rowspan="2"><img src="food.jpg" alt="img" width="220px" height="420px"></td>
+        </tr>
+        <tr>
+        <td><img src="people.jpg" alt="img" height="200px" width="220px"></td> 
+        </tr>
+      </table>
+    </div>
+    <div class="main"> 
+      <p class="upper-text">LOREM IPSUM</p>
+      <h1 class="middle-text">LOREM IPSUM <br/>SET ADEMIR</h2>
+      <p><label class="lower-text">Click</label> <img src="arrow.png" alt="img" height="15px" width="15px"> </p>
+    </div>
+  </div>
+</body>
+</html>
